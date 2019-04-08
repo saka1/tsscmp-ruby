@@ -6,6 +6,9 @@ require 'openssl'
 module Tsscmp
   module_function
 
+  # Constant time string comparison.
+  #
+  # Returns true if the two arguments are same value, otherwise false.
   def compare(a, b) # rubocop:disable Naming/UncommunicativeMethodParamName:
     return false if a.nil? || b.nil?
 
@@ -19,4 +22,3 @@ module Tsscmp
     ah == bh && a == b
   end
 end
-

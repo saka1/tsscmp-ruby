@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class Tsscmm < Minitest::Test
+class TestTsscmp < Minitest::Test
   def test_that_it_has_a_version_number
     refute_nil ::Tsscmp::VERSION
   end
