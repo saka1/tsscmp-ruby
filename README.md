@@ -1,6 +1,7 @@
 # tsscmp-ruby
 
-TODO
+This gem provides timing-safe string compare with [double HMAC pattern](https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2011/february/double-hmac-verification/).
+It is inspired by [suryagh's tsscmp library](https://github.com/suryagh/tsscmp).
 
 ## Installation
 
@@ -37,6 +38,6 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## TODO
 
-- Statistical tests on timing-safety
+- Statistical tests on timing-safe
 - Remove dependency to openssl
 
