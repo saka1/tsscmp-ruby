@@ -16,7 +16,7 @@ module Tsscmp
     key = SecureRandom.random_bytes(32)
     ah = OpenSSL::HMAC.hexdigest('sha256', key, a)
     bh = OpenSSL::HMAC.hexdigest('sha256', key, b)
-    ah == bh
+    ah == bh && a == b
   end
 end
 
