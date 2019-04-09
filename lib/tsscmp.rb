@@ -22,7 +22,8 @@ module Tsscmp
 
     # Implementation Note:
     # `&& a == b` is a very very conservative comparison.
-    # In my opnion, `ah == bh` is enough to compare securely although several other implementations use the strictly method such as:
+    # In my opnion, `ah == bh` is enough to compare securely although several other implementations use
+    # the strictly method such as:
     #  - https://github.com/rails/rails/blob/v5.2.3/activesupport/lib/active_support/security_utils.rb#L27
     #  - https://github.com/suryagh/tsscmp/blob/v1.0.6/lib/index.js#L35
     # So, as of the present time, I add `&& a == b`.
