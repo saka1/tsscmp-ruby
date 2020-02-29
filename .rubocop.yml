@@ -1,8 +1,14 @@
 require:
   - rubocop-performance
-LineLength:
+Layout/LineLength:
   Max: 120
+Metrics/CyclomaticComplexity:
+  Max: 10
 Style/Documentation:
   Enabled: false
-CyclomaticComplexity:
-  Max: 10
+Style/HashEachMethods:
+  Enabled: true
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true

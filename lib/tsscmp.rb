@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'tsscmp/version'
 
 require 'securerandom'
@@ -9,7 +11,7 @@ module Tsscmp
   # Constant time string comparison.
   #
   # Returns true if the two arguments have same value, otherwise false.
-  def compare(a, b) # rubocop:disable Naming/UncommunicativeMethodParamName:
+  def compare(a, b) # rubocop:disable Naming/MethodParameterName
     return false if a.nil? || b.nil?
 
     # assume the arguments is String
