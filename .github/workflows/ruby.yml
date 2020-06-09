@@ -11,13 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby: [ '2.5', '2.6', '2.7' ]
+        ruby: [ '2.6', '2.7' ]
     name: Ruby ${{ matrix.ruby }} sample
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
+      - name: Update bundler
+        run: gem install bundler -v 2.1.4
       - name: Install dependencies
         run: bundle install
       - name: Run tests
