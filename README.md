@@ -1,5 +1,5 @@
 # tsscmp-ruby
-[![Build Status](https://travis-ci.org/saka1/tsscmp-ruby.svg?branch=master)](https://travis-ci.org/saka1/tsscmp-ruby)
+[![Ruby](https://github.com/saka1/tsscmp-ruby/workflows/Ruby/badge.svg)](https://github.com/saka1/tsscmp-ruby/actions?query=workflow%3ARuby)
 
 This gem provides timing-safe string compare with [double HMAC pattern](https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2011/february/double-hmac-verification/).
 It is inspired by [suryagh's tsscmp library](https://github.com/suryagh/tsscmp).
