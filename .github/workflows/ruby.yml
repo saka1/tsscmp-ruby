@@ -15,7 +15,7 @@ jobs:
     name: Ruby ${{ matrix.ruby }} sample
     steps:
       - uses: actions/checkout@v2.3.3
-      - uses: actions/setup-ruby@v1.1.1
+      - uses: actions/setup-ruby@v1.1.2
         with:
           ruby-version: ${{ matrix.ruby }}
       - name: Update bundler
